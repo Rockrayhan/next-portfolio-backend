@@ -1,6 +1,6 @@
 ## 📚 Parcel Delivery Management Backend API
 
-A simple backend API for Parcel Management System — built with **Node.js**, **TypeScript**, **Express.js**, and **MongoDB (Mongoose)**.
+A simple backend API for Portfolio website — built with **Node.js**, **TypeScript**, **Express.js**, and **MongoDB (Mongoose)**.
 
 ### Live link: https://portfolio-cms-backend.vercel.app/
 
