@@ -2,6 +2,8 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import authRoute from "./app/modules/auth/auth.route";
 import blogRoute from "./app/modules/blog/blog.route";
+import ProjectRoute from "./app/modules/project/project.route";
+
 
 const app = express();
 
@@ -10,7 +12,7 @@ app.use(express.json());
 // app.use(cors());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:3000", "https://next-portfolio-frontend-pi.vercel.app"],
     methods: ["GET", "POST", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
@@ -25,5 +27,6 @@ app.get("/", (req: Request, res: Response) => {
 // routes
 app.use("/auth", authRoute);
 app.use("/blogs", blogRoute);
+app.use("/projects", ProjectRoute);
 
 export default app;
